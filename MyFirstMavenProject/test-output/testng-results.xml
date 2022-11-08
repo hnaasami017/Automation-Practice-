@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="11" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-05T19:26:25 EET" name="Suite" finished-at="2022-11-05T19:27:28 EET" duration-ms="62888">
+    <groups>
+    </groups>
+    <test started-at="2022-11-05T19:26:25 EET" name="All" finished-at="2022-11-05T19:27:28 EET" duration-ms="62888">
+      <class name="TestClass.TestLogin">
+        <test-method signature="login()[pri:1, instance:TestClass.TestLogin@4d0f2471]" started-at="2022-11-05T19:27:07 EET" name="login" finished-at="2022-11-05T19:27:18 EET" duration-ms="11322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="loginwithincorrectPassword()[pri:2, instance:TestClass.TestLogin@4d0f2471]" started-at="2022-11-05T19:27:18 EET" name="loginwithincorrectPassword" finished-at="2022-11-05T19:27:22 EET" duration-ms="4062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithincorrectPassword -->
+      </class> <!-- TestClass.TestLogin -->
+      <class name="TestClass.SearchTest">
+        <test-method signature="CheckAllItemsareinStock()[pri:0, instance:TestClass.SearchTest@7133da86]" started-at="2022-11-05T19:27:22 EET" name="CheckAllItemsareinStock" finished-at="2022-11-05T19:27:26 EET" duration-ms="3848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckAllItemsareinStock -->
+      </class> <!-- TestClass.SearchTest -->
+      <class name="TestClass.ContactUsTest">
+        <test-method is-config="true" signature="SetUP()[pri:0, instance:TestClass.ContactUsTest@25084a1e]" started-at="2022-11-05T19:26:25 EET" name="SetUP" finished-at="2022-11-05T19:26:55 EET" duration-ms="30377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUP -->
+        <test-method signature="testcontactus()[pri:1, instance:TestClass.ContactUsTest@25084a1e]" started-at="2022-11-05T19:26:56 EET" name="testcontactus" finished-at="2022-11-05T19:27:07 EET" duration-ms="11283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcontactus -->
+        <test-method is-config="true" signature="Teamdown()[pri:0, instance:TestClass.ContactUsTest@25084a1e]" started-at="2022-11-05T19:27:26 EET" name="Teamdown" finished-at="2022-11-05T19:27:28 EET" duration-ms="1615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teamdown -->
+      </class> <!-- TestClass.ContactUsTest -->
+      <class name="TestClass.HomePageTest">
+        <test-method signature="CheckHomePageCount()[pri:0, instance:TestClass.HomePageTest@32ee6fee]" started-at="2022-11-05T19:27:07 EET" name="CheckHomePageCount" finished-at="2022-11-05T19:27:07 EET" duration-ms="59" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [7] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [7] but found [0]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at org.testng.Assert.assertEquals(Assert.java:1274)
+at TestClass.HomePageTest.CheckHomePageCount(HomePageTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckHomePageCount -->
+      </class> <!-- TestClass.HomePageTest -->
+    </test> <!-- All -->
+  </suite> <!-- Suite -->
+</testng-results>
